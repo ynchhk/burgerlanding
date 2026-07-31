@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*Общие стили */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1C1C1C;
+    color:#FFFFFF
+}
+.price-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+     /* Темный фон */
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif; /* Жирный шрифт */
+    user-select: none;
+  }
+
+  /* Текущая цена (яркий оранжевый) */
+  .price-current {
+    color: #ff6a00;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* Старая цена (приглушенный оранжево-коричневый с зачеркиванием) */
+  .price-old {
+    color: #794623;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: line-through;
+  }
+
+::-webkit-scrollbar {
+  width: 10px; /* Ширина для вертикального */
+  height: 10px; /* Высота для горизонтального */
+}
+
+/* 2. Дорожка (фон), по которой ползает бегунок */
+::-webkit-scrollbar-track {
+  background: #111111; /* Делаем темной под фон макета */
+}
+
+/* 3. Сам ползунок (бегунок) */
+::-webkit-scrollbar-thumb {
+  background: #f26522; /* Оранжевый цвет в стиль кнопок ORDER NOW */
+  border-radius: 5px;   /* Скругление */
+}
+
+/* 4. Бегунок при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #d45113; /* Чуть темнее при ховере */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{ 
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 1169px;
+   
+ margin-top: 46px;
+}
+
+
+
+.header__nav {
+    
+    
+}
+
+.header__list {
+    display: flex; 
+    gap: 28px;
+}
+
+.header__nav a{
+    opacity: 0.7;
+}
+
+.header__nav a:hover{
+    opacity: 0.9;
+}
+
+.btn {
+    height:49px;
+    width: 165px;
+    font-weight: 500;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F6762C;
+    border-radius:5px;
+
+    transition: opacity 0.3s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+.welcomepage {
+   background: url('./images/welcome-bg.jpg') no-repeat center/cover;
+   height: 1019px;
+   display:flex;
+   flex-direction: column;
+   align-items:center ;
+   
+
+}
+
+.welcomepage__txtblock {
+    width:555px;
+    height: 267px;
+    margin: 0;
+    padding: 0;
+    margin-top: 345px;
+    margin-left: -600px;
+
+}
+
+.wp__name {
+    font-size: 14px;
+    letter-spacing: 10%;
+
+}
+
+.welcomepage__slogan {
+    font-size: 58px;
+    margin: 0;
+}
+
+.wp__text {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.m {
+    margin-left: -1000px;
+}
+
+.food {
+    height: 527px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.food__list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.food__list__item {
+    border-radius: 10px;
+    
+    box-shadow:none;   
+    background-color: #312F30;
+    width: 262px;
+    height: 323px;
+    
+}
+.food__item__img {
+    width: 262px;
+    height: 175px;
+    border-radius: 10px 10px 0 0;
+}
+
+.food__list__name {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.food__list__txt {
+    opacity: 0.7;
+    font-size: 16px;
+    text-align: center;
+}
+
+.food__list__item_txtblock{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.burger {
+    height: 543px;
+    background-color: #312F30;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.burger_ordermenu {
+    width: 371px;
+    height: 214px;
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+}
+.burger__heading {
+    font-size: 44px;
+}
+.burger__txt {
+    opacity: 0.7;
+    font-size: 16px;
+}
+
+
+
+.product__section {
+    display:flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+}
+.productblock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Чтобы кнопка и текст были слева */
+  
+    padding: 30px;
+}
+
+
+
+.product__txtblock {
+    width: 252px;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+.product__heading {
+    font-size: 30px;
+}
+.product__txt {
+    opacity: 0.7;
+    font-size: 16px;
+}
+
+.btnp{
+    width: 141px;
+    height: 39px;
+    font-weight: 500;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F6762C;
+    border-radius:5px;
+}
+
+.p1{
+    background-image: url(./images/product-1.jpg);
+    align-items: end;
+
+}
+
+.p2{
+    background-image: url(./images/product-2.jpg);
+    
+}
+
+.p3{
+    background-image: url(./images/product-3.jpg);
+    align-items: end;
+}
+
+.p4{
+    background-image: url(./images/product-4.jpg);
+
+}
+
+
+.product__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    height: 630px;
+    width: 1140px;
+
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+}
+.feedback__block {
+    height: 361px;
+    width: 851px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:195px;
+}
+
+.feedback__txtblock {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+.feedback__quot {
+    height: 47px;
+    width: 47px;
+}
+
+.fd__txt {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 16px;
+    margin-bottom: 26px;
+}
+.fd__name {
+     text-align: center;
+     font-size: 24px;
+}
+.fd__country {
+     text-align: center;
+     opacity: 0.7;
+    font-size: 12px;
+}
+
+.download {
+    height: 170px;
+    background-color: #312F30;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.download__txt {
+    font-size: 40px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 381px;
+}
+.footer__list {
+    width: 1118px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__logo {
+    height: 70px;
+    width: 70px;
+}
+.contact__item {
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.item__header {
+    font-size: 16px;
+}
+.item__item {
+    opacity: 0.8;
+    font-size:12px;
+    margin-top: 15px;
+}
+
